@@ -20,14 +20,15 @@ Este repositorio documenta el desarrollo, visualización e interpretación de mo
 
 El proyecto se desarrolló principalmente en **Python**, utilizando las siguientes librerías:
 
-| Librería            | Propósito principal                         |
-|---------------------|---------------------------------------------|
-| `pandas`            | Manipulación de datos tabulares             |
-| `numpy`             | Cálculos numéricos y transformaciones       |
-| `matplotlib.pyplot` | Gráficos básicos                            |
-| `seaborn`           | Visualización avanzada (histogramas, pairplot) |
-| `scikit-learn`      | Entrenamiento de modelos, evaluación, split |
-| `statsmodels.api`   | Estimación y resumen estadístico detallado  |
+| Librería                       | Propósito principal                                         |
+|-------------------------------|-------------------------------------------------------------|
+| `pandas`                      | Manipulación de datos tabulares                             |
+| `numpy`                       | Cálculos numéricos y transformaciones                       |
+| `matplotlib.pyplot`           | Gráficos básicos                                            |
+| `seaborn`                     | Visualización avanzada (histogramas, pairplot)              |
+| `scikit-learn`                | Modelado predictivo, métricas y separación de datos         |
+| `sklearn.model_selection`     | Separación de datos en entrenamiento y prueba (`train_test_split`) |
+| `statsmodels.api`             | Estimación y resumen estadístico detallado                  |
 
 ---
 
@@ -36,7 +37,8 @@ El proyecto se desarrolló principalmente en **Python**, utilizando las siguient
 - Limpieza y exploración de datos
 - Distribuciones sesgadas y visualización con boxplot e histogramas
 - Transformaciones logarítmicas para normalización
-- Construcción de modelos de regresión lineal (sklearn y statsmodels)
+- Separación de datos usando `train_test_split` para evitar sobreajuste y evaluar generalización del modelo
+- Construcción de modelos de regresión lineal (scikit-learn y statsmodels)
 - Evaluación con R² y R² ajustada
 - Interpretación de coeficientes, p-values, estadísticos F y t
 - Análisis de residuos y validación de supuestos
@@ -52,4 +54,8 @@ Integra pensamiento técnico y reflexivo en sus proyectos, documentando el apren
 
 ---
 
-¿Quieres que te ayude a convertirlo en una versión bilingüe, o agregar badges de GitHub como `Last updated`, `Built with Python` u otros? También podemos enlazar tu LinkedIn o portfolio si lo deseas.
+## 🧠 Nota ética sobre el entrenamiento del modelo
+
+Separar los datos en conjuntos de entrenamiento y prueba mediante `train_test_split` no solo es una práctica técnica: es una forma de honrar la incertidumbre. Dividir los datos significa aceptar que el modelo debe enfrentarse a lo desconocido, demostrar que puede generalizar sin memorizar. Esta decisión recuerda que, en ciencia —como en la vida—, la predicción nunca es certeza, y el error, lejos de ser una falla, es señal de apertura, aprendizaje y revisión constante.
+
+---
